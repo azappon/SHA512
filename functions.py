@@ -39,6 +39,8 @@ def padding(message):
 
 
 def process(padded_mess):
+    """ input: padded message (type: bytearray)
+        output: hashed message (type: string) """
     global initial_hash_values
     h0, h1, h2, h3, h4, h5, h6, h7 = initial_hash_values
     # process the message in successive 1024-bit = 128-bytes chunks:
