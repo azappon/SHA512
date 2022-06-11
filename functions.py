@@ -35,7 +35,7 @@ def padding(message):
     # adding the 64 bit length of the original message
     mess += mess_length_bytes
     assert len(mess) % 128 == 0, f"Padding error! Length of message is: {len(mess)}"
-    return padded_mess
+    return mess
 
 
 def process(padded_mess):
